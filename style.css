@@ -242,6 +242,7 @@ raph-links twitter {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 8px;
 }
 
 raph-links twitch twitch-video-container,
@@ -321,4 +322,8 @@ raph-links youtube youtube-video-container iframe {
     100% {
         opacity: 1;
     }
+}
+
+#twitterFeed * {
+    font-family: "Lato" !important;
 }
