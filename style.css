@@ -76,9 +76,9 @@ body {
 
 .raph-socials {
     flex-direction: column;
-    position: absolute;
+/*     position: absolute;
     top: 90px;
-    right: 0;
+    right: 0; */
 }
 
 @media (min-width: 0) and (max-width: 959px) and (orientation: portrait) {
@@ -196,7 +196,17 @@ menu-opener {
     transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
     letter-spacing: .010em;
 }
-
+wrapper {
+    min-width: 0;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+}
 content {
     min-width: 0;
     flex-direction: column;
@@ -208,7 +218,7 @@ content {
     display: flex;
     flex: 1;
     overflow: auto;
-    margin-right: 70px;
+    /* margin-right: 70px; */
 }
 
 content::-webkit-scrollbar,
