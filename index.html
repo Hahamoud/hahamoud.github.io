@@ -24,27 +24,35 @@
     <section class="raph-main">
         <nav class="raph-navbar" role="navigation" aria-label="navigation">
             <raph-navbar-tools>
-                <menu-opener>
+<!--                 <menu-opener>
                     <button class="menu-opener__icon" type="button" style="margin: 0; min-width: 0;">
                         <img src="images/icons/ic_menu_black_24dp_1x.png" alt="menu">
                         <span style="color: #202020; font-size: 10px; line-height: 1; font-weight: 600;">menu</span>
                     </button>
-                </menu-opener>
-                <raph-navbar__title>TOP BANNER</raph-navbar__title>
+                </menu-opener> -->
+                
+                <raph-navbar__title>    
+                    <object data="images/icons/alogo-1.svg" type="image/svg+xml" style="height: 100%">logo</object>
+                    <span>Raph's</span>
+                </raph-navbar__title>
+                <raph-navbar-links>
+                    <nav-bar__link selected>HOME</nav-bar__link>
+                    <nav-bar__link>ABOUT ME</nav-bar__link>
+                    <nav-bar__link>COACHING</nav-bar__link>
+                    <nav-bar__link><a href="./tavern.html">THE TAVERNE</a></nav-bar__link>
+                    <nav-bar__link>TWITCH</nav-bar__link>
+                    <nav-bar__link>CONTACT</nav-bar__link>
+                    <nav-bar__link>ARTICLES</nav-bar__link>
+                </raph-navbar-links>
             </raph-navbar-tools>
-            <raph-navbar-links>
-                <link>HOME</link>
-                <link>ABOUT ME</link>
-                <link>COACHING</link>
-                <link><a href="./tavern.html">The TAVERNE</a></link>
-                <link>TWITCH</link>
-                <link>CONTACT</link>
-                <link>ARTICLES</link>
-            </raph-navbar-links>
         </nav>
         <wrapper>
 
             <content>
+
+                <content-pre>
+                    BLA
+                </content-pre>
 
                 <raph-presentation>
                     <img src="./images/photos/the_raph.jpg" alt="some photo">
@@ -89,8 +97,8 @@
                                 embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe>
                     </twitch-video-container>
                 </twitch>
-                <raph-links>
-<!--                     <youtube>
+<!--           <raph-links>
+                     <youtube>
                         <youtube-video-container>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/5EpDS-0g3Co?controls=0"
                                 title="YouTube video player"
@@ -104,8 +112,9 @@
                         <a class="twitter-timeline" data-height="325" data-theme="dark"
                             href="https://twitter.com/raphlevymtg">Tweets by raphlevymtg</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </twitter> -->
-                </raph-links>
+                    </twitter>
+                </raph-links> -->
+                <div id="divFeed"></div>
             </content>
             <nav class="raph-socials" aria-label="socials buttons">
                 <raph-navbar-tools>
@@ -135,7 +144,9 @@
 
 
 </body>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="FeedEk.min.js"></script>
 <script type="module" src="index.js "></script>
+
 
 </html>

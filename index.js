@@ -12,5 +12,6 @@ reportPerimeter(square1.length, reportList);
 // Use the default
 let square2 = randomSquare(myCanvas.ctx); */
 
-console.log('window.innerWidth', window.innerWidth)
-console.log('window.innerHeight', window.innerHeight)
+$('#divFeed').FeedEk({
+    FeedUrl:'https://jquery-plugins.net/rss'
+    })

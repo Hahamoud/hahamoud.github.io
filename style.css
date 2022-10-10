@@ -133,16 +133,51 @@ raph-navbar-tools {
     align-items: center;
     width: 100%;
     margin: 0;
+
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    justify-content: flex-start;
 }
 
 .raph-navbar raph-navbar-links {
-    height: 20px;
+    flex-direction: row;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    justify-content: flex-end;
+}
+
+.raph-navbar raph-navbar-links nav-bar__link {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    height: 100%;
+
+}
+
+nav-bar__link:not([selected]) {
+    color: #a9a9a9;
+}
+
+nav-bar__link[selected] {
+    background-color: #48c0f4;
+    color: rgba(255, 255, 255, .87);
 }
 
 .raph-navbar raph-navbar-tools {
     flex-direction: row;
-    height: 64px;
-    max-height: 64px;
+    height: 120px;
+    max-height: 120px;
     padding: 0 16px;
 }
 
@@ -153,6 +188,18 @@ raph-navbar-tools {
 
 raph-navbar__title {
     font-size: 4.4vh;
+    height: 100px;
+    line-height: 100px;
+    flex: 1;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
+raph-navbar__title object{
+    margin-right: 20px;
 }
 
 menu-opener {
@@ -251,6 +298,22 @@ content::-webkit-scrollbar-track {
     border-left: 0;
 }
 
+content content-pre {
+    background-image: url(images/background/running_background.png);
+    height: 160px;
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, .87);
+    font-size: 3em;
+    padding: 15px;
+}
 
 raph-links,
 raph-socials {
