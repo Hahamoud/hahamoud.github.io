@@ -1,5 +1,5 @@
-/* import { create, createReportList } from './modules/canvas.js';
-import { name, draw, reportArea, reportPerimeter } from './modules/square.js';
+import { ToolbarManager } from './modules/toolbar-maneger.js';
+/*import { name, draw, reportArea, reportPerimeter } from './modules/square.js';
 import randomSquare from './modules/square.js';
 
 let myCanvas = create('myCanvas', document.body, 480, 320);
@@ -12,6 +12,10 @@ reportPerimeter(square1.length, reportList);
 // Use the default
 let square2 = randomSquare(myCanvas.ctx); */
 
-$('#divFeed').FeedEk({
-    FeedUrl:'https://jquery-plugins.net/rss'
-    })
+/* $('#divFeed').FeedEk({
+    FeedUrl: 'https://jquery-plugins.net/rss'
+})
+ */
+
+let toolbarManager = new ToolbarManager('raph-navbar', 'content')
+toolbarManager.listen()
