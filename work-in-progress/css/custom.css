@@ -1,0 +1,47 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+._desktop_logo .logo.img-responsive {
+    max-width: 100%;
+    max-height: 92px;
+}
+
+.homeBannerContent li .item_block_img img {
+    width: auto;
+    height: 200px;
+}
+
+#header .header-nav .material-icons {
+    position: static;
+    padding: 0;
+    line-height: 1;
+}
+
+@media only screen and (min-width: 992px) {
+    #search_widget {
+        min-width: unset;
+    }
+}
+
+html::-webkit-scrollbar,
+html::-webkit-scrollbar:horizontal {
+    background: 0 0;
+    width: 8px;
+    height: 4px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #df5a49;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+    border-left: 1px solid #ccc;
+}
