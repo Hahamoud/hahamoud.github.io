@@ -47,9 +47,7 @@
     <raph-wrapper>
         <raph-wrapper__content id="content">
 
-            <content-pre>
-                SOME SPECIAL NEWS/INFOS
-            </content-pre>
+            <content-pre>Welcome</content-pre>
 
             <raph-presentation>
                 <img src="./static/images/photos/the_raph.jpg" alt="some photo">
@@ -85,98 +83,25 @@
                 </twitch>
             </content-medias>
             <div id="divFeed"></div>
-            <raph-presentation>
-                <img src="./static/images/photos/the_raph.jpg" alt="some photo">
-                <p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans
-                    accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.</p>
-
-                <p>
-                    Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
-                </p>
-
-                <p>
-                    Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros
-                    singulis intellegam eu sit.
-                </p>
-
-                <p>
-                    Sit saepe quaestio reprimique id, duo no congue nominati, cum id nobis facilisi. No est laoreet dissentias, idque consectetuer eam id. Clita possim assueverit cu his, solum virtute recteque et cum. Vel cu luptatum signiferumque, mel eu brute nostro senserit.
-                    Blandit euripidis consequat ex mei, atqui torquatos id cum, meliore luptatum ut usu. Cu zril perpetua gubergren pri. Accusamus rationibus instructior ei pro, eu nullam principes qui, reque justo omnes et quo.
-                </p>
-
-                <p>
-                    Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur
-                    has te.
-                </p>
-            </raph-presentation>
-            <raph-presentation>
-                <img src="./static/images/photos/the_raph.jpg" alt="some photo">
-                <p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans
-                    accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.</p>
-
-                <p>
-                    Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
-                </p>
-
-                <p>
-                    Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros
-                    singulis intellegam eu sit.
-                </p>
-
-                <p>
-                    Sit saepe quaestio reprimique id, duo no congue nominati, cum id nobis facilisi. No est laoreet dissentias, idque consectetuer eam id. Clita possim assueverit cu his, solum virtute recteque et cum. Vel cu luptatum signiferumque, mel eu brute nostro senserit.
-                    Blandit euripidis consequat ex mei, atqui torquatos id cum, meliore luptatum ut usu. Cu zril perpetua gubergren pri. Accusamus rationibus instructior ei pro, eu nullam principes qui, reque justo omnes et quo.
-                </p>
-
-                <p>
-                    Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur
-                    has te.
-                </p>
-            </raph-presentation>
-            <raph-presentation>
-                <img src="./static/images/photos/the_raph.jpg" alt="some photo">
-                <p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans
-                    accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.</p>
-
-                <p>
-                    Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
-                </p>
-
-                <p>
-                    Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros
-                    singulis intellegam eu sit.
-                </p>
-
-                <p>
-                    Sit saepe quaestio reprimique id, duo no congue nominati, cum id nobis facilisi. No est laoreet dissentias, idque consectetuer eam id. Clita possim assueverit cu his, solum virtute recteque et cum. Vel cu luptatum signiferumque, mel eu brute nostro senserit.
-                    Blandit euripidis consequat ex mei, atqui torquatos id cum, meliore luptatum ut usu. Cu zril perpetua gubergren pri. Accusamus rationibus instructior ei pro, eu nullam principes qui, reque justo omnes et quo.
-                </p>
-
-                <p>
-                    Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur
-                    has te.
-                </p>
-            </raph-presentation>
-
             <?php
-$query = new WP_Query( $args );
-if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) {
-        $query->the_post();
-        ?>
-LET'S GO
+            $recent_posts = wp_get_recent_posts(array(
+                'numberposts' => 4, // Number of recent posts thumbnails to display
+                'post_status' => 'publish' // Show only the published posts
+            ));
+            foreach ($recent_posts as $post_item) {
+                setup_postdata($post_item);
+                ?>
 
-
-<?php
-    }
-    wp_reset_postdata();
-} else {
-    ?>
-    // none were found
-<?php
-}
-?>
-
+                <raph-presentation>
+                    <a href="<?php echo get_permalink($post_item['ID']) ?>">
+                        <?php echo get_the_post_thumbnail($post_item['ID'], 'full'); ?>
+                        <h1><?php echo get_the_title($post_item['ID']); ?></h1>
+                        <p><?php echo get_the_excerpt($post_item['ID']); ?></p>
+                    </a>
+                </raph-presentation>
+            <?php 
+                wp_reset_postdata();
+            } ?>
 
         </raph-wrapper__content>
         <nav class="raph-socials" aria-label="socials buttons">

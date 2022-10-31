@@ -47,9 +47,7 @@
     <raph-wrapper>
         <raph-wrapper__content id="content">
 
-            <content-pre>
-                SOME SPECIAL NEWS/INFOS
-            </content-pre>
+            <content-pre>Welcome</content-pre>
 
             <raph-presentation>
                 <img src="./static/images/photos/the_raph.jpg" alt="some photo">
@@ -90,16 +88,20 @@
                 'numberposts' => 4, // Number of recent posts thumbnails to display
                 'post_status' => 'publish' // Show only the published posts
             ));
-            foreach ($recent_posts as $post_item) : ?>
+            foreach ($recent_posts as $post_item) {
+                setup_postdata($post_item);
+                ?>
 
                 <raph-presentation>
                     <a href="<?php echo get_permalink($post_item['ID']) ?>">
                         <?php echo get_the_post_thumbnail($post_item['ID'], 'full'); ?>
-                        <h1><?php echo $post_item['post_title'] ?></h1>
-                        <p><?php the_excerpt($recent["ID"]); ?></p>
+                        <h1><?php echo get_the_title($post_item['ID']); ?></h1>
+                        <p><?php echo get_the_excerpt($post_item['ID']); ?></p>
                     </a>
                 </raph-presentation>
-            <?php endforeach; ?>
+            <?php 
+                wp_reset_postdata();
+            } ?>
 
         </raph-wrapper__content>
         <nav class="raph-socials" aria-label="socials buttons">

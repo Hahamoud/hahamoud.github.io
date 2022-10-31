@@ -1,13 +1,18 @@
 <!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--large, 8rem)","top":"var(--wp--custom--spacing--small, 1.25rem)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--custom--spacing--small, 1.25rem);padding-bottom:var(--wp--custom--spacing--large, 8rem)"><!-- wp:group {"layout":{"type":"flex"}} -->
-<div class="wp-block-group"><!-- wp:site-logo {"width":64} /-->
-
-<!-- wp:site-title /--></div>
-<!-- /wp:group -->
-
-<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
-<!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
-<!-- /wp:navigation --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+<nav class="raph-navbar" role="navigation" aria-label="navigation" id="raph-navbar">
+    <raph-navbar__tools>
+        <raph-navbar__title>
+            <object data="static/images/icons/alogo-1.svg" type="image/svg+xml">logo</object>
+            <span>Raph's</span>
+        </raph-navbar__title>
+        <raph-navbar_links>
+            <raph-navbar_links__link selected>HOME</raph-navbar_links__link>
+            <raph-navbar_links__link>ABOUT ME</raph-navbar_links__link>
+            <raph-navbar_links__link>COACHING</raph-navbar_links__link>
+            <raph-navbar_links__link><a href="./tavern.html">THE TAVERNE</a></raph-navbar_links__link>
+            <raph-navbar_links__link>TWITCH</raph-navbar_links__link>
+            <raph-navbar_links__link>CONTACT</raph-navbar_links__link>
+            <raph-navbar_links__link>ARTICLES</raph-navbar_links__link>
+        </raph-navbar_links>
+    </raph-navbar__tools>
+</nav>
