@@ -22,13 +22,6 @@
 <body>
     <nav class="raph-navbar" role="navigation" aria-label="navigation" id="raph-navbar">
         <raph-navbar__tools>
-            <!--                 <menu-opener>
-                    <button class="menu-opener__icon" type="button" style="margin: 0; min-width: 0;">
-                        <img src="static/images/icons/ic_menu_black_24dp_1x.png" alt="menu">
-                        <span style="color: #202020; font-size: 10px; line-height: 1; font-weight: 600;">menu</span>
-                    </button>
-                </menu-opener> -->
-
             <raph-navbar__title>
                 <object data="static/images/icons/alogo-1.svg" type="image/svg+xml">logo</object>
                 <span>Raph's</span>
@@ -51,26 +44,8 @@
 
             <raph-presentation>
                 <img src="./static/images/photos/the_raph.jpg" alt="some photo">
-                <p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans
-                    accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.</p>
-
                 <p>
-                    Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
-                </p>
-
-                <p>
-                    Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros
-                    singulis intellegam eu sit.
-                </p>
-
-                <p>
-                    Sit saepe quaestio reprimique id, duo no congue nominati, cum id nobis facilisi. No est laoreet dissentias, idque consectetuer eam id. Clita possim assueverit cu his, solum virtute recteque et cum. Vel cu luptatum signiferumque, mel eu brute nostro senserit.
-                    Blandit euripidis consequat ex mei, atqui torquatos id cum, meliore luptatum ut usu. Cu zril perpetua gubergren pri. Accusamus rationibus instructior ei pro, eu nullam principes qui, reque justo omnes et quo.
-                </p>
-
-                <p>
-                    Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur
-                    has te.
+                    Raphaël Lévy is a Professional Magic Player from Toulouse, France. He was inducted into the Magic Pro Tour Hall of Fame in November 2006. He has 6 PT Top 8's and 6 GP wins to his name and led the French team to victory in the 2013 World Magic Cup.
                 </p>
             </raph-presentation>
             <content-medias>
