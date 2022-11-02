@@ -177,14 +177,15 @@ raph-navbar_links__link {
 
 raph-navbar__title {
     flex: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
     font-size: 4.4vh;
+    font-style: italic;
+    font-weight: 700;
     height: 100px;
     line-height: 100px;
     max-width: 100%;
+    text-transform: uppercase;
     transition: all .3s cubic-bezier(.35, 0, .25, 1);
+    text-shadow: 5px 3px 3px rgb(0 0 0 / 23%);
 }
 
 .raph-navbar,
@@ -316,7 +317,9 @@ raph-navbar_links__link {
     flex: 0 0 auto;
     height: 100%;
     max-width: 100%;
-    padding: 0 10px
+    padding: 0 10px;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media (min-width:0) and (max-width:959px) and (orientation:portrait) {
@@ -372,4 +375,5 @@ body {
     font-family: 'Barlow';
     font-weight: 500;
     width: 100%;
+    --wp--preset--font-family--inter: 'Barlow';
 }
