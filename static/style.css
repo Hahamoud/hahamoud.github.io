@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500;1,800;1,900&display=swap);
 html {
     height: 100%;
     max-height: 100%;
@@ -12,7 +14,7 @@ html {
     animation-iteration-count: 1;
     animation-name: showMenu;
     animation-timing-function: ease-in;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: 'Barlow';
     font-weight: 400
 }
 
@@ -133,10 +135,14 @@ raph-navbar__tools {
 raph-navbar__title {
     flex: 1;
     font-size: 4.4vh;
+    font-style: italic;
+    font-weight: 700;
     height: 100px;
     line-height: 100px;
     max-width: 100%;
-    transition: all .3s cubic-bezier(.35, 0, .25, 1)
+    text-transform: uppercase;
+    transition: all .3s cubic-bezier(.35, 0, .25, 1);
+    text-shadow: 5px 3px 3px rgb(0 0 0 / 23%);
 }
 
 raph-navbar__title object {
@@ -215,7 +221,9 @@ raph-navbar_links__link {
     flex: 0 0 auto;
     height: 100%;
     max-width: 100%;
-    padding: 0 10px
+    padding: 0 10px;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media (min-width:0) and (max-width:959px) and (orientation:portrait) {
@@ -327,10 +335,14 @@ content-pre {
     background-size: cover;
     color: hsla(0, 0%, 100%, .87);
     flex: 0 0 auto;
-    font-size: 3em;
+    font-size: 6em;
     height: 160px;
     max-width: 100%;
-    padding: 15px
+    padding: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 5px 8px rgb(0 0 0 / 45%);
 }
 
 raph-links,

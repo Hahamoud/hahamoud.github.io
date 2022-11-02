@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="static/style.min.css">
     <link rel="shortcut icon" href="./static/images/icons/alogo-1.svg">
     <link rel="manifest" href="./static/manifest.json">
-    <!-- <link rel="apple-touch-icon" href="./static/images/icons/alogo-1.svg"> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <script src="https://apis.google.com/js/platform.js"></script>
 </head>
 

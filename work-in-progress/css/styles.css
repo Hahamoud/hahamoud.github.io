@@ -133,10 +133,14 @@ raph-navbar__tools {
 raph-navbar__title {
     flex: 1;
     font-size: 4.4vh;
+    font-style: italic;
+    font-weight: 700;
     height: 100px;
     line-height: 100px;
     max-width: 100%;
-    transition: all .3s cubic-bezier(.35, 0, .25, 1)
+    text-transform: uppercase;
+    transition: all .3s cubic-bezier(.35, 0, .25, 1);
+    text-shadow: 5px 3px 3px rgb(0 0 0 / 23%);
 }
 
 raph-navbar__title object {
