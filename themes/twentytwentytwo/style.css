@@ -322,6 +322,17 @@ raph-navbar_links__link {
     font-style: italic;
 }
 
+raph-navbar_links__link a {
+    color: inherit;
+    text-decoration: inherit;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
 @media (min-width:0) and (max-width:959px) and (orientation:portrait) {
     raph-navbar__tools {
         padding: 0 2px
@@ -376,4 +387,9 @@ body {
     font-weight: 500;
     width: 100%;
     --wp--preset--font-family--inter: 'Barlow';
+}
+
+main h1 {
+    text-transform: uppercase;
+    font-style: italic;
 }

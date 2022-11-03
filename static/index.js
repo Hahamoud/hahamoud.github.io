@@ -1,21 +1,8 @@
 import { ToolbarManager } from './modules/toolbar-maneger.js';
-/*import { name, draw, reportArea, reportPerimeter } from './modules/square.js';
-import randomSquare from './modules/square.js';
+import { CardFlipper } from './modules/flip-card.js';
 
-let myCanvas = create('myCanvas', document.body, 480, 320);
-let reportList = createReportList(myCanvas.id);
 
-let square1 = draw(myCanvas.ctx, 50, 50, 100, 'blue');
-reportArea(square1.length, reportList);
-reportPerimeter(square1.length, reportList);
-
-// Use the default
-let square2 = randomSquare(myCanvas.ctx); */
-
-/* $('#divFeed').FeedEk({
-    FeedUrl: 'https://jquery-plugins.net/rss'
-})
- */
-
-let toolbarManager = new ToolbarManager('raph-navbar', 'content')
+const toolbarManager = new ToolbarManager('raph-navbar', 'content')
+const cardFlipper = new CardFlipper();
 toolbarManager.listen()
+cardFlipper.listen()

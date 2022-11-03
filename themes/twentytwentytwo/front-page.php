@@ -42,13 +42,18 @@
             <raph-presentation>
                 <img src="./static/images/photos/the_raph.jpg" alt="some photo">
                 <p>
-                    Raphaël Lévy is a Professional Magic Player from Toulouse, France. He was inducted into the Magic Pro Tour Hall of Fame in November 2006. He has 6 PT Top 8's and 6 GP wins to his name and led the French team to victory in the 2013 World Magic Cup.
+                    Raphaël Lévy is a Professional Magic Player from Toulouse, France.
+                    He was inducted into the Magic Pro Tour Hall of Fame in November 2006.
+                    He has 6 PT Top 8's and 6 GP wins to his name and led the French team to victory in the 2013 World Magic Cup.
                 </p>
             </raph-presentation>
             <content-medias>
                 <twitch>
                     <twitch-video-container style="padding-bottom: 56.25%; position: relative;">
-                        <iframe width="100%" height="100%" title="twitch player" src="https://player.twitch.tv/?channel=raphaellevy&parent=www.raphlevy.com" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
+                        <iframe width="100%" height="100%" title="twitch player"
+                            src="https://player.twitch.tv/?channel=raphaellevy&parent=www.raphlevy.com"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
                             <small>Twitch embedding powered by <a href="https://embed.tube">embed.tube</a></small>
                         </iframe>
                     </twitch-video-container>
@@ -75,6 +80,12 @@
                 wp_reset_postdata();
             } ?>
 
+            <div class="scene scene--card">
+            <card>
+                <front>&nbsp;</front>
+                <back>&nbsp;</back>
+            </card>
+            </div>
         </raph-wrapper__content>
         <nav class="raph-socials" aria-label="socials buttons">
             <raph-socials__tools>
@@ -102,7 +113,6 @@
     </raph-wrapper>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<!-- <script type="text/javascript" src="FeedEk.min.js"></script> -->
 <script type="module" src="static/index.js "></script>
 
 
