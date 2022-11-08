@@ -182,7 +182,6 @@ raph-navbar__title object {
     }
     .raph-navbar-show raph-navbar__title,
     raph-navbar__title {
-        flex: 0 0 auto;
         height: 28px;
         line-height: 28px
     }
