@@ -22,7 +22,6 @@ body {
     background: #dedede;
     color: #333;
     flex: 1;
-    flex-direction: row;
     flex-direction: column;
     font-size: 14px;
     height: 100%;

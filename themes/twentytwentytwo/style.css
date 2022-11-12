@@ -162,11 +162,11 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
 
 /* raph-style */
 
-.raph-navbar,
-raph-navbar__tools,
-raph-navbar__title,
+header,
+.raph-navbar__tools,
+.raph-navbar__title,
 raph-navbar_links,
-raph-navbar_links__link {
+.wp-block-navigation-item {
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -175,7 +175,7 @@ raph-navbar_links__link {
     display: flex
 }
 
-raph-navbar__title {
+.raph-navbar__title {
     flex: 1;
     font-size: 4.4vh;
     font-style: italic;
@@ -188,7 +188,7 @@ raph-navbar__title {
     text-shadow: 5px 3px 3px rgb(0 0 0 / 23%);
 }
 
-.raph-navbar,
+header,
 .raph-socials {
     background-color: hsla(0, 0%, 100%, .87);
     color: #202020;
@@ -198,7 +198,7 @@ raph-navbar__title {
     z-index: 100
 }
 
-.raph-navbar {
+header {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     flex-direction: column
 }
@@ -209,13 +209,13 @@ raph-navbar__title {
 }
 
 @media (min-width:0) and (max-width:959px) and (orientation:portrait) {
-    .raph-navbar,
+    header,
     .raph-socials {
         min-height: 56px
     }
 }
 
-raph-navbar__tools,
+.raph-navbar__tools,
 raph-socials__tools {
     font-size: 20px;
     font-weight: 400;
@@ -225,32 +225,32 @@ raph-socials__tools {
     width: 100%
 }
 
-raph-navbar__tools {
+.raph-navbar__tools {
     padding: 0 16px;
     transition: all .3s cubic-bezier(.35, 0, .25, 1)
 }
 
-raph-navbar__tools,
-raph-navbar_links__link {
+.raph-navbar__tools,
+.wp-block-navigation-item {
     align-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-raph-navbar__title {
+.raph-navbar__title {
     justify-content: center
 }
 
-raph-navbar__title object {
+.raph-navbar__title object {
     margin-right: 20px
 }
 
-.raph-navbar-show raph-navbar__title object,
-raph-navbar__title object {
+.raph-navbar-show .raph-navbar__title object,
+.raph-navbar__title object {
     height: 100%
 }
 
-.raph-navbar-hide raph-navbar__title object {
+.raph-navbar-hide .raph-navbar__title object {
     height: 20px
 }
 
@@ -259,61 +259,62 @@ raph-navbar__title object {
         height: 24px;
         min-height: 24px
     }
-    .raph-navbar-hide raph-navbar__title object {
+    .raph-navbar-hide .raph-navbar__title object {
         height: 40px
     }
-    .raph-navbar-show raph-navbar__tools,
-    raph-navbar__tools {
+    .raph-navbar-show .raph-navbar__tools,
+    .raph-navbar__tools {
         height: 56px;
         max-height: 56px
     }
-    .raph-navbar-hide raph-navbar__tools {
+    .raph-navbar-hide .raph-navbar__tools {
         height: 24px;
         max-height: 24px
     }
-    .raph-navbar-hide raph-navbar__title {
+    .raph-navbar-hide .raph-navbar__title {
         height: 24px;
         line-height: 24px
     }
-    .raph-navbar-show raph-navbar__title,
-    raph-navbar__title {
+    .raph-navbar-show .raph-navbar__title,
+    .raph-navbar__title {
         height: 28px;
         line-height: 28px
     }
-    .raph-navbar-hide raph-navbar_links {
+    .raph-navbar-hide .wp-block-navigation {
         display: none
     }
 }
 
 @media (min-width:1000px) and (orientation:landscape) {
-    .raph-navbar-hide raph-navbar__title object {
+    .raph-navbar-hide .raph-navbar__title object {
         height: 20px
     }
-    .raph-navbar-show raph-navbar__tools,
-    raph-navbar__tools {
+    .raph-navbar-show .raph-navbar__tools,
+    .raph-navbar__tools {
         height: 120px;
         max-height: 120px
     }
-    .raph-navbar-hide raph-navbar__tools {
+    .raph-navbar-hide .raph-navbar__tools {
         height: 20px;
         max-height: 20px
     }
 }
 
-.raph-navbar-hide raph-navbar__title {
+.raph-navbar-hide .raph-navbar__title {
     font-size: 2.4vh
 }
 
-raph-navbar_links {
+.wp-block-navigation {
     align-content: center;
-    align-items: center;
+    align-items: center !important;
     flex-direction: row;
     height: 100%;
-    justify-content: flex-end;
-    max-width: 100%
+    justify-content: flex-end !important;
+    max-width: 100%;
+    margin: 0 !important;
 }
 
-raph-navbar_links__link {
+.wp-block-navigation-item {
     flex: 0 0 auto;
     height: 100%;
     max-width: 100%;
@@ -322,34 +323,35 @@ raph-navbar_links__link {
     font-style: italic;
 }
 
-raph-navbar_links__link a {
+.wp-block-navigation-item a {
     color: inherit;
-    text-decoration: inherit;
+    text-decoration: inherit !important;
     height: 100%;
     align-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    display: flex;
+    display: flex !important;
+    text-transform: uppercase;
 }
 
 @media (min-width:0) and (max-width:959px) and (orientation:portrait) {
-    raph-navbar__tools {
+    .raph-navbar__tools {
         padding: 0 2px
     }
-    raph-navbar_links {
+    .wp-block-navigation {
         font-size: 1.3vh
     }
-    raph-navbar_links__link {
+    .wp-block-navigation-item {
         padding: 0 2.5px
     }
 }
 
-raph-navbar_links__link:not([selected]) {
+.wp-block-navigation-item:not([selected]) {
     color: #a9a9a9
 }
 
-raph-navbar_links__link[selected] {
+.wp-block-navigation-item[selected] {
     background-color: #48c0f4;
     color: hsla(0, 0%, 100%, .87)
 }
@@ -366,30 +368,153 @@ menu-opener {
 
 /* surcharge */
 
-raph-navbar__tools {
+.raph-navbar__tools {
     margin: 0 !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+}
+
+.raph-navbar__tools>div,
+.raph-navbar__tools-container {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    margin: 0 !important;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
     max-width: 100% !important;
 }
 
 header {
-    margin: 0 calc(0px - var(--wp--custom--spacing--outer));
+    margin: 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+}
+
+.raph-navbar__title>h1>a {
+    font-size: 4.4vh;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100px;
+    text-shadow: 5px 3px 3px rgb(0 0 0 / 23%);
+    text-transform: uppercase;
+    letter-spacing: .005em;
+    color: #202020;
+    font-family: 'Barlow';
+    text-decoration: inherit !important;
+}
+
+.raph-navbar__tools .wp-block-navigation__responsive-container,
+.raph-navbar__tools .wp-block-navigation__responsive-close,
+.raph-navbar__tools .wp-block-navigation__responsive-dialog,
+.raph-navbar__tools .wp-block-navigation__responsive-container-content {
+    height: 100%;
 }
 
 
 /* header have negative margin to take fullscreen */
 
-html,
-body {
+html {
     height: 100%;
-    line-height: 1.375;
-    scroll-behavior: smooth;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-y: hidden !important;
+    width: 100%
+}
+
+body,
+html {
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    animation-name: showMenu;
+    animation-timing-function: ease-in;
     font-family: 'Barlow';
-    font-weight: 500;
-    width: 100%;
-    --wp--preset--font-family--inter: 'Barlow';
+    font-weight: 400
+}
+
+body {
+    background: #dedede;
+    color: #333;
+    flex: 1;
+    flex-direction: column;
+    font-size: 14px;
+    height: 100%;
+    line-height: 1.42857;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative
 }
 
 main h1 {
     text-transform: uppercase;
     font-style: italic;
+}
+
+
+/* DO A NICE SCROLLBAR*/
+
+.wp-site-blocks {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 0;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+
+.main__wrapper {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+    overflow: auto;
+}
+
+.main__wrapper::-webkit-scrollbar,
+.main__wrapper::-webkit-scrollbar:horizontal {
+    background-color: transparent;
+    height: 16px;
+    width: 8px
+}
+
+.main__wrapper::-webkit-scrollbar-thumb {
+    background: #2cab0a;
+    border-radius: 2px
+}
+
+.main__wrapper::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(59, 227, 13, .4)
+}
+
+.main__wrapper::-webkit-scrollbar-track {
+    border-left: 0
+}
+
+.wp-site-blocks .alignfull {
+    margin: 0 !important;
 }
