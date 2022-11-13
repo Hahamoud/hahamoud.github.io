@@ -188,6 +188,15 @@ raph-navbar__title object {
     .raph-navbar-hide raph-navbar_links {
         display: none
     }
+    .raph-socials {
+        transition-duration: .5s;
+        transition-property: width;
+        transition-timing-function: cubic-bezier(.35, 0, .25, 1);
+        width: 50px;
+    }
+    .social-hide {
+        width: 0px;
+    }
 }
 
 @media (min-width:1000px) and (orientation:landscape) {
@@ -225,6 +234,12 @@ raph-navbar_links__link {
     padding: 0 10px;
     font-weight: 700;
     font-style: italic;
+    text-transform: uppercase;
+}
+
+raph-navbar_links__link a {
+    color: inherit;
+    text-decoration: inherit !important;
 }
 
 @media (min-width:0) and (max-width:1000px) {
@@ -306,7 +321,6 @@ raph-wrapper__content {
     flex-direction: column;
     min-width: 0;
     overflow: auto;
-    padding-bottom: 120px;
     position: relative;
 }
 
@@ -502,6 +516,7 @@ footer {
     display: flex;
     z-index: 2000;
     width: 100%;
+    padding: 3vw;
 }
 
 footer .footer-bloc {
@@ -538,6 +553,12 @@ footer .footer-title:after {
 
 footer .footer-social {
     display: flex;
+}
+
+@media (min-width:0) and (max-width:1000px) {
+    footer .footer-social {
+        flex-direction: column;
+    }
 }
 
 footer .footer-social li {

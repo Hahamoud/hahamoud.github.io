@@ -1,3 +1,8 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://raphlevy.com/$1 [R=301,L]
+
+# log php errors
+php_flag log_errors on
+php_flag display_errors off
+php_value error_log /home/sc1cloudpfn/site2raphael/wp-content/plugins/error-log-viewer/includes/log/php-errors.log

@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    
+<?php
+$menuHTML = wp_nav_menu(array(
+    'menu' => 'Navigation 2',
+    'container' => false, // Removes the container, leaving just the ul element
+    'echo' => false
+));
+
+
+$menuHTML = str_replace( '<div class="menu">', '', $menuHTML );
+$menuHTML = str_replace( '</div">', '', $menuHTML );
+$menuHTML = str_replace( '</ul>', '', $menuHTML );
+$menuHTML = str_replace( '<ul>', '', $menuHTML );
+$menuHTML = str_replace( '</ul>', '', $menuHTML );
+$menuHTML = str_replace( '<li', '<raph-navbar_links__link', $menuHTML );
+$menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
+
+?>
     <header class="raph-navbar" role="navigation" aria-label="navigation" id="raph-navbar">
         <raph-navbar__tools>
             <raph-navbar__title>
@@ -23,13 +41,9 @@
                 <span>raphlevy.com</span>
             </raph-navbar__title>
             <raph-navbar_links>
-                <raph-navbar_links__link selected>HOME</raph-navbar_links__link>
-                <raph-navbar_links__link>ABOUT ME</raph-navbar_links__link>
-                <raph-navbar_links__link>ARTICLES</raph-navbar_links__link>
-                <raph-navbar_links__link>COACHING</raph-navbar_links__link>
-                <raph-navbar_links__link><a href="./card-tavern.html">CARD TAVERN</a></raph-navbar_links__link>
-                <raph-navbar_links__link>LIVE TWITCH</raph-navbar_links__link>
-                <raph-navbar_links__link>CONTACT</raph-navbar_links__link>
+
+                <?php echo $menuHTML?>
+
             </raph-navbar_links>
         </raph-navbar__tools>
     </header>
@@ -162,7 +176,7 @@
                 </section>
             </footer>
         </raph-wrapper__content>
-        <nav class="raph-socials" aria-label="socials buttons">
+        <nav id="raph-socials" class="raph-socials" aria-label="socials buttons">
             <raph-socials__tools>
 
                 <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
