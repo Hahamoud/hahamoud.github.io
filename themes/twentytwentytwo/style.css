@@ -443,7 +443,6 @@ html {
 }
 
 body {
-    background: #dedede;
     color: #333;
     flex: 1;
     flex-direction: column;
@@ -481,6 +480,7 @@ main h1 {
     padding: 0;
 }
 
+main.wp-block-group,
 .main__wrapper {
     box-sizing: border-box;
     display: -webkit-box;
@@ -517,4 +517,13 @@ main h1 {
 
 .wp-site-blocks .alignfull {
     margin: 0 !important;
+}
+
+footer {
+    height: 50px;
+    --wp--custom--spacing--large: 0;
+}
+
+footer>div>div>div {
+    padding: 0 !important;
 }

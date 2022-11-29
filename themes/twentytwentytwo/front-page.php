@@ -21,7 +21,8 @@
 $menuHTML = wp_nav_menu(array(
     'menu' => 'Navigation 2',
     'container' => false, // Removes the container, leaving just the ul element
-    'echo' => false
+    'echo' => false,
+    'theme_location' => 'primary' 
 ));
 
 
@@ -52,11 +53,15 @@ $menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
 
             <content-pre>Welcome</content-pre>
 
-            <raph-presentation>
+            <raph-presentation style="   font-size: 1.5em;">
                 <img src="./static/images/photos/the_raph.jpg" alt="some photo">
                 <p>
                     Raphaël Lévy is a Professional Magic Player from Toulouse, France.
+                </p>
+                <p>
                     He was inducted into the Magic Pro Tour Hall of Fame in November 2006.
+                </p>
+                <p>
                     He has 6 PT Top 8's and 6 GP wins to his name and led the French team to victory in the 2013 World Magic Cup.
                 </p>
             </raph-presentation>
@@ -100,35 +105,24 @@ $menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
                 <section aria-labelledby="legal-footer-title" class="footer-bloc">
                     <p id="legal-footer-title" class="footer-title">Me contacter</p>
                     <ul>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/legal-terms.html">Me contacter</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/privacy-policy.html" aria-label="Privacy policy (new window)">Politique de confidentialité</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/cookie_management_policy.html">Notice sur la gestion des Cookies</a></li>
-                        <li><a href="#" id="ot-sdk-btn">Paramètres des cookies</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/terms-of-sales.html">Conditions Générales de Vente</a></li>
-                    </ul>
-                </section>
-                <section aria-labelledby="legal-footer-title" class="footer-bloc">
-                    <p id="legal-footer-title" class="footer-title">Informations légales</p>
-                    <ul>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/legal-terms.html">Mentions légales</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/privacy-policy.html" aria-label="Privacy policy (new window)">Politique de confidentialité</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/cookie_management_policy.html">Notice sur la gestion des Cookies</a></li>
-                        <li><a href="#" id="ot-sdk-btn">Paramètres des cookies</a></li>
-                        <li><a href="https://www.guerlain.com/fr/fr-fr/c/terms-of-sales.html">Conditions Générales de Vente</a></li>
+                        <li><a href="/contact.html">Me contacter</a></li>
+                        <li><a href="/privacy-policy.html" aria-label="Privacy policy (new window)">Politique de confidentialité</a></li>
+                        <li><a href="/cookie_management_policy.html">Notice sur la gestion des Cookies</a></li>
+                        <li><a href="/terms-of-sales.html">Conditions Générales de Vente</a></li>
                     </ul>
                 </section>
                 <section aria-labelledby="legal-footer-title" class="footer-bloc">
                     <p id="follow-us-footer-title" class="footer-title">Suivre #RaphLevy</p>
                     <ul class="footer-social">
                         <li>
-                            <a aria-label="RapheLevy Twitter (new window)" href="https://twitter.com/Guerlain" target="_blank">
+                            <a aria-label="RapheLevy Twitter (new window)" href="https://twitter.com/raphlevymtg" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                                     <path class="background" fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429" />
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a aria-label="RapheLevy Facebook (new window)" href="https://www.facebook.com/Guerlain" target="_blank">
+                            <a aria-label="RapheLevy Facebook (new window)" href="https://www.facebook.com/raphael.levy.mtg" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                                     <path class="background" fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z" />
                                     <path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z" />
@@ -136,7 +130,7 @@ $menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
                             </a>
                         </li>
                         <li>
-                            <a aria-label="RapheLevy Instagram (new window)" href="https://www.instagram.com/guerlain/" target="_blank">
+                            <a aria-label="RapheLevy Instagram (new window)" href="https://www.instagram.com/raphlevy_mtg" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                                     <path class="background1" fill="#304ffe" d="M41.67,13.48c-0.4,0.26-0.97,0.5-1.21,0.77c-0.09,0.09-0.14,0.19-0.12,0.29v1.03l-0.3,1.01l-0.3,1l-0.33,1.1 l-0.68,2.25l-0.66,2.22l-0.5,1.67c0,0.26-0.01,0.52-0.03,0.77c-0.07,0.96-0.27,1.88-0.59,2.74c-0.19,0.53-0.42,1.04-0.7,1.52 c-0.1,0.19-0.22,0.38-0.34,0.56c-0.4,0.63-0.88,1.21-1.41,1.72c-0.41,0.41-0.86,0.79-1.35,1.11c0,0,0,0-0.01,0 c-0.08,0.07-0.17,0.13-0.27,0.18c-0.31,0.21-0.64,0.39-0.98,0.55c-0.23,0.12-0.46,0.22-0.7,0.31c-0.05,0.03-0.11,0.05-0.16,0.07 c-0.57,0.27-1.23,0.45-1.89,0.54c-0.04,0.01-0.07,0.01-0.11,0.02c-0.4,0.07-0.79,0.13-1.19,0.16c-0.18,0.02-0.37,0.03-0.55,0.03 l-0.71-0.04l-3.42-0.18c0-0.01-0.01,0-0.01,0l-1.72-0.09c-0.13,0-0.27,0-0.4-0.01c-0.54-0.02-1.06-0.08-1.58-0.19 c-0.01,0-0.01,0-0.01,0c-0.95-0.18-1.86-0.5-2.71-0.93c-0.47-0.24-0.93-0.51-1.36-0.82c-0.18-0.13-0.35-0.27-0.52-0.42 c-0.48-0.4-0.91-0.83-1.31-1.27c-0.06-0.06-0.11-0.12-0.16-0.18c-0.06-0.06-0.12-0.13-0.17-0.19c-0.38-0.48-0.7-0.97-0.96-1.49 c-0.24-0.46-0.43-0.95-0.58-1.49c-0.06-0.19-0.11-0.37-0.15-0.57c-0.01-0.01-0.02-0.03-0.02-0.05c-0.1-0.41-0.19-0.84-0.24-1.27 c-0.06-0.33-0.09-0.66-0.09-1c-0.02-0.13-0.02-0.27-0.02-0.4l1.91-2.95l1.87-2.88l0.85-1.31l0.77-1.18l0.26-0.41v-1.03 c0.02-0.23,0.03-0.47,0.02-0.69c-0.01-0.7-0.15-1.38-0.38-2.03c-0.22-0.69-0.53-1.34-0.85-1.94c-0.38-0.69-0.78-1.31-1.11-1.87 C14,7.4,13.66,6.73,13.75,6.26C14.47,6.09,15.23,6,16,6h16c4.18,0,7.78,2.6,9.27,6.26C41.43,12.65,41.57,13.06,41.67,13.48z" />
                                     <path class="background2" fill="#4928f4" d="M42,16v0.27l-1.38,0.8l-0.88,0.51l-0.97,0.56l-1.94,1.13l-1.9,1.1l-1.94,1.12l-0.77,0.45 c0,0.48-0.12,0.92-0.34,1.32c-0.31,0.58-0.83,1.06-1.49,1.47c-0.67,0.41-1.49,0.74-2.41,0.98c0,0,0-0.01-0.01,0 c-3.56,0.92-8.42,0.5-10.78-1.26c-0.66-0.49-1.12-1.09-1.32-1.78c-0.06-0.23-0.09-0.48-0.09-0.73v-7.19 c0.01-0.15-0.09-0.3-0.27-0.45c-0.54-0.43-1.81-0.84-3.23-1.25c-1.11-0.31-2.3-0.62-3.3-0.92c-0.79-0.24-1.46-0.48-1.86-0.71 c0.18-0.35,0.39-0.7,0.61-1.03c1.4-2.05,3.54-3.56,6.02-4.13C14.47,6.09,15.23,6,16,6h10.8c5.37,0.94,10.32,3.13,14.47,6.26 c0.16,0.39,0.3,0.8,0.4,1.22c0.18,0.66,0.29,1.34,0.32,2.05C42,15.68,42,15.84,42,16z" />
@@ -179,22 +173,22 @@ $menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
         <nav id="raph-socials" class="raph-socials" aria-label="socials buttons">
             <raph-socials__tools>
 
-                <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
+                <a class="raph-socials__icon" href="https://www.facebook.com/raphael.levy.mtg">
                     <object data="static/images/icons/icons8-facebook-50.svg" type="image/svg+xml"></object>
                 </a>
-                <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
+                <a class="raph-socials__icon" href="https://www.instagram.com/raphlevy_mtg/">
                     <object data="static/images/icons/icons8-instagram-50.svg" type="image/svg+xml"></object>
                 </a>
-                <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
+<!--                 <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
                     <object data="static/images/icons/icons8-tiktok-50.svg" type="image/svg+xml"></object>
-                </a>
+                </a> -->
                 <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
                     <object data="static/images/icons/icons8-twitter-50.svg" type="image/svg+xml"></object>
                 </a>
                 <a class="raph-socials__icon" href="https://www.youtube.com/channel/UCelnNVqwjQpi7ttIREZ2A6A">
                     <object data="static/images/icons/icons8-youtube-50.svg" type="image/svg+xml"></object>
                 </a>
-                <a class="raph-socials__icon" href="https://twitter.com/raphlevymtg">
+                <a class="raph-socials__icon" href="https://discord.gg/duSrfJVj5y">
                     <object data="static/images/icons/icons8-discord.svg" type="image/svg+xml"></object>
                 </a>
             </raph-socials__tools>
@@ -203,5 +197,6 @@ $menuHTML = str_replace( '</li>', '</raph-navbar_links__link>', $menuHTML );
 </body>
 <script type="module" src="static/index.js "></script>
 
+v1.0
 
 </html>

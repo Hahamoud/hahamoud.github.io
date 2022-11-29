@@ -471,7 +471,8 @@ twitch {
 
 .raph-socials__icon object {
     height: 48px;
-    width: 48px
+    width: 48px;
+    pointer-events: none;
 }
 
 .raph-socials__icon {
